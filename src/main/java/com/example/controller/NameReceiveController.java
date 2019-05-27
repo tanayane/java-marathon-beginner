@@ -12,10 +12,10 @@ public class NameReceiveController {
 	public String index() {
 		return "inputname";
 	}
-	
+
 	@RequestMapping("/receive")
-	public String receive(String name,Model model) {
-		model.addAttribute("name",name);
+	public String receive(String name, Model model) {
+		model.addAttribute("name", name);
 		return "outputname";
 	}
 }
