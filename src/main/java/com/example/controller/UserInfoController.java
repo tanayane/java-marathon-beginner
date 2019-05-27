@@ -14,14 +14,14 @@ public class UserInfoController {
 	public String index() {
 		return "inputuserinfo";
 	}
-	
+
 	@RequestMapping("/receive")
-	public String receive(String name,Integer age,String address,Model model) {
-		User user=new User();
+	public String receive(String name, Integer age, String address, Model model) {
+		User user = new User();
 		user.setName(name);
 		user.setAge(age);
 		user.setAddress(address);
-		model.addAttribute("user",user);
+		model.addAttribute("user", user);
 		return "outputuserinfo";
 	}
 }
