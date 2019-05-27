@@ -5,11 +5,11 @@
 <title>title</title>
 </head>
 <body>
-	<form action="index.html" th:action="@{/nameprint/submit}"
+	<form action="index.html" th:action="@{/nameprint/receive}"
 		method="post">
 		<div>
-			<label for="nameform">名前：</label> <input type="text" id="nameform"
-				name="name" th:field="*{name}">
+			<label for="nameform">名前：</label> 
+			<input type="text" id="nameform" name="name">
 		</div>
 		<div>
 			<input type="submit" value="送信">
