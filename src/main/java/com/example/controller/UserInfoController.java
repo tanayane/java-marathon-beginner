@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.domain.User;
+
 @Controller
 @RequestMapping("/userinfo")
 public class UserInfoController {
@@ -15,9 +17,11 @@ public class UserInfoController {
 	
 	@RequestMapping("/receive")
 	public String receive(String name,Integer age,String address,Model model) {
-		model.addAttribute("name", name);
-		model.addAttribute("age", age);
-		model.addAttribute("address", address);
+		User user=new User();
+		user.setName(name);
+		user.setAge(age);
+		user.setAddress(address);
+		model.addAttribute("user",user);
 		return "outputuserinfo";
 	}
 }
