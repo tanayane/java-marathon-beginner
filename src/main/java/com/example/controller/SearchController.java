@@ -13,15 +13,15 @@ public class SearchController {
 
 	@Autowired
 	private UserRepository repository;
-	
+
 	@RequestMapping("")
 	public String index() {
 		return "userinfosearch";
 	}
-	
+
 	@RequestMapping("/receive")
-	public String receive(Integer id,Model model) {
-		model.addAttribute("user",repository.load(id));
+	public String receive(Integer id, Model model) {
+		model.addAttribute("user", repository.load(id));
 		return "userinfoview";
 	}
 }

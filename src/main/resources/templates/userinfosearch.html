@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+	<form action="userinfoview.html" th:action="@{/search/receive}" method="post">
+		<label for="idform">ID:</label>
+		<input type="text" id="idform" name="id">
+		<br>
+		<input type="submit" value="検索">
+	</form>
+</body>
+</html>
