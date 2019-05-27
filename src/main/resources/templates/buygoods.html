@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+	<form action="totalprice.html" th:action="@{/register/receive}" method="post">
+		<div>
+			<label for="goods1">商品1:</label>
+			<input type="text" id="goods1" name="goods1">
+		</div>
+		<div>
+			<label for="goods2">商品2:</label>
+			<input type="text" id="goods2" name="goods2">
+		</div>
+		<div>
+			<label for="goods3">商品3:</label>
+			<input type="text" id="goods3" name="goods3">
+		</div>
+		<div><input type="submit" value="購入"></div>
+	</form>
+</body>
+</html>
