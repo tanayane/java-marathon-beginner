@@ -24,4 +24,9 @@ public class CalcController {
 		session.setAttribute("answer", num1*num2);
 		return "outputvalue";
 	}
+	
+	@RequestMapping("/output2")
+	public String output2() {
+		return "outputvalue2";
+	}
 }
