@@ -16,15 +16,15 @@ public class CalcController {
 	public String index() {
 		return "inputvalue";
 	}
-	
+
 	@RequestMapping("/receive")
-	public String receive(Integer num1,Integer num2) {
+	public String receive(Integer num1, Integer num2) {
 		session.setAttribute("num1", num1);
 		session.setAttribute("num2", num2);
-		session.setAttribute("answer", num1*num2);
+		session.setAttribute("answer", num1 * num2);
 		return "outputvalue";
 	}
-	
+
 	@RequestMapping("/output2")
 	public String output2() {
 		return "outputvalue2";
