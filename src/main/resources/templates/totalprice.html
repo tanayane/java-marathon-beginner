@@ -8,11 +8,11 @@
 	<h1>合計金額</h1>
 	<div>
 		<h2>税抜き価格</h2>
-		<span th:text="${numbers.formatInteger(application.total100,1,'COMMA')}">税抜き</span>
+		<span th:text="${#numbers.formatInteger(application.totalExcludingTax,1,'COMMA')}">税抜き</span>円
 	</div>
 	<div>
 		<h2>税抜き価格</h2>
-		<span th:text="${numbers.formatInteger(application.total108,1,'COMMA')}">税抜き</span>
+		<span th:text="${#numbers.formatInteger(application.totalIncludingTax,1,'COMMA')}">税抜き</span>円
 	</div>
 </body>
 </html>
