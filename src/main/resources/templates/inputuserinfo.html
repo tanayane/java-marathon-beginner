@@ -5,6 +5,23 @@
 <title>title</title>
 </head>
 <body>
-
+	<form action="index.html" th:action="@{/userinfo/receive}"
+	method="post">
+		<div>
+			<label for="nameform">名前：</label> 
+			<input type="text" id="nameform" name="name">
+		</div>
+		<div>
+			<label for="ageform">年齢：</label> 
+			<input type="text" id="ageform" name="age">
+		</div>
+		<div>
+			<label for="addressform">住所：</label> 
+			<input type="text" id="addressform" name="address">
+		</div>
+		<div>
+			<input type="submit" value="送信">
+		</div>
+	</form>
 </body>
 </html>
